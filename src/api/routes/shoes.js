@@ -4,7 +4,7 @@ const router = express.Router();
 const shoeController = require("../app/controllers/ShoeController");
 
 router.get('/create',shoeController.create)
-router.post('/store',shoeController.store)
+// router.post('/store',shoeController.store)
 router.get('/:id/edit',shoeController.edit)
 router.get('/:slug',shoeController.show)
 router.put('/:id',shoeController.update)
