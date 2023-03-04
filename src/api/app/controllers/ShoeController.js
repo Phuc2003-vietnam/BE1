@@ -1,5 +1,6 @@
 const Shoe = require("../Models/shoe");
 const { mongooseToObj } = require("../../util/mongoose");
+var {filePath}=require("../../routes/upload")
 class ShoeController {
   // [Get] /shoes/:slug
   show(req, res, next) {
@@ -15,7 +16,10 @@ class ShoeController {
   }
   // [POST] /shoes/store
   store(req, res, next) {
+    
     const formData = req.body;
+    // formData.image=filePath
+    console.log(formData)
     const shoe = new Shoe(formData);
     shoe
       .save()

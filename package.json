@@ -13,7 +13,7 @@
   },
   "name": "xam",
   "version": "1.0.0",
-  "main": "src/express.js",
+  "main": "src/index.js",
   "devDependencies": {
     "mongoose-slug-generator": "^1.0.4",
     "node-sass": "^8.0.0",
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -L src/express.js",
+    "dev": "nodemon -L /src/express.js",
     "watch": "node-sass --watch src/resource/scss/app.scss src/public/css/app.css",
     "start": "nodemon --inspect src/express.js"
   },

@@ -2,7 +2,7 @@ const newsRouter=require('./news')
 const siteRouter=require('./site')
 const coursesRouter=require('./shoes')
 const meRouter=require('./me')
-const uploadRouter = require('./upload');
+const {uploadRouter} = require('./upload');
 function route(app){
     // app.use('/news',newsRouter)
     app.use('/shoes',coursesRouter)
